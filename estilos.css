@@ -1,0 +1,35 @@
+body{
+  background: green;
+}
+
+.lightrope {
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  margin: -15px 0 0 0;
+  padding: 0;
+  width: 100%;
+}
+
+.lightrope li {
+  position: relative;
+  animation-iteration-count: infinite;
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+  width: 12px;
+  height: 40px;
+  border-radius: 150%;
+  display: inline-block;
+  background: #00f7a5; /*verde azul*/
+  box-shadow: 0px 5px 24px 3px #00f7a5;
+  animation-name: flash-1;
+  animation-duration: 2s;
+}
+
+/*
+h1{
+  display: block;
+  margin-top: 100px;
+  text-align: center;
+}
