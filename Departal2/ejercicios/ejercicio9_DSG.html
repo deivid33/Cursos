@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Departamental II | Validar Constancias</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plantilla/plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../plantilla/dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <!-- Messages Dropdown Menu -->
+
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="../../index3.html" class="brand-link">
+      <img src="../plantilla/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Electivas</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="../plantilla/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Alexander Pierce</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="ejercicio5_DSG.html" class="nav-link">
+              <i class="nav-icon far fa-circle text-info"></i>
+              <p>
+                Calculadora Básica
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="ejercicio6_DSG.html" class="nav-link">
+              <i class="nav-icon far fa-circle brand-text"></i>
+              <p>
+                Calculadora Científica
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="ejercicio7_DSG.html" class="nav-link">
+              <i class="nav-icon far fa-circle text-warning"></i>
+              <p>
+                Conversor de Unidades
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="ejercicio8_DSG.html" class="nav-link">
+              <i class="nav-icon far fa-circle text-muted"></i>
+              <p>
+                CRUD Denominación
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="ejercicio9_DSG.html" class="nav-link">
+              <i class="nav-icon far fa-circle text-danger"></i>
+              <p>
+                Validación de Electivas
+              </p>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Validar Constancias</h1>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+      <div class="container-fluid">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Validar constancias</h3>
+            <!--/Final de la cabecera-->
+              </div>
+            <!-- / = .card-header -->
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="dataTables_length" id="dataTables-example_length">
+                  <label><select name="dataTables-example_length" aria-controls="dataTables-example" class="form-control input-sm">
+                    <option value="10">10</option>
+                    <option value="7">7</option>
+                    <option value="4">4</option>
+                    <option value="1">1</option>
+                  </select></label>
+                </div>
+              </div>
+              <div style="float: right;" class="card-tools">
+                <div class="input-group input-group-sm" style="width: 150px;">
+                  <input type="text" name="table_search" class="form-control float-right" placeholder="Buscar">
+
+                  <div class="input-group-append">
+                    <button type="submit" class="btn btn-default">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="page-inner">
+              <div class="row">
+                  <div class="col-md-12">
+                      <!-- Advanced Tables -->
+                      <div id="page-inner">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- Advanced Tables -->
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Programa Académico</th>
+                                                        <th>Nombre</th>
+                                                        <th>Actividad</th>
+                                                        <th>Horas</th>
+                                                        <th>Acciones</th>
+                                                        
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="odd gradeX">
+                                                        <td>Sistemas Computacionales</td>
+                                                        <td>Juan Martínez</td>
+                                                        <td>Curso de Android</td>
+                                                        <td>20</td>
+                                                        <td class="center">
+                                                           <button class="btn btn-warning" data-toggle="modal" data-target="#ModalActualizar"><i class="fas fa-vote-yea"></i></button>
+                                                       </td>
+                                                    </tr>
+                                                    <tr class="even gradeC">
+                                                        <td>Mecatrónica</td>
+                                                        <td>Alberto González</td>
+                                                        <td>Curso de Electrónica</td>
+                                                        <td>40</td>
+                                                        <td class="center">
+                                                       <button class="btn btn-warning" data-toggle="modal" data-target="#ModalActualizar"><i class="fas fa-vote-yea"></i></button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="odd gradeA">
+                                                        <td>Ambiental</td>
+                                                        <td>Vanessa Hernández</td>
+                                                        <td>Curso de energías sustentables</td>
+                                                        <td>10</td>
+                                                        <td class="center">
+                                                        <button class="btn btn-warning" data-toggle="modal" data-target="#ModalActualizar"><i class="fas fa-vote-yea"></i></button>
+                                                   </tr>
+                                                    <tr class="even gradeA">
+                                                        <td>Sistemas Computacionales</td>
+                                                        <td>Roberto Castañeda</td>
+                                                        <td>Curso de React</td>
+                                                        <td>30</td>
+                                                        <td class="center">
+                                                        <button class="btn btn-warning" data-toggle="modal" data-target="#ModalActualizar"><i class="fas fa-vote-yea"></i></button>
+                                                   </tr>
+                                                    <tr class="even gradeA">
+                                                        <td>Alimentos</td>
+                                                        <td>Elizabeth Juarez</td>
+                                                        <td>Curso de Biotecnología de Microorganismos</td>
+                                                        <td>25</td>
+                                                        <td class="center">
+                                                        <button class="btn btn-warning" data-toggle="modal" data-target="#ModalActualizar"><i class="fas fa-vote-yea"></i></button>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <!--End Advanced Tables -->
+                            </div>
+                        </div>
+                    </div>
+                      <!--End Advanced Tables -->
+
+
+ <!--Ventana Modal para Nueva Denominacion-->
+ <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="myModalLabel">Alta de denominaciones</h4>
+          </div>
+          <div class="modal-body"><!--CONTENIDO DE LA VENTANA MODAL-->
+              <div class="row"> <!--RENGLON 1-->
+                  <div class="col-md-6"> <!--COLUMNA 1-->
+                      <div class="form-group">
+                          <label>Eje Tematico</label>
+                          <input type="text" class="form-control" id="txt_alta_1" placeholder="Marcador de Posicion">
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label>Modalidad</label>
+                          <input type="text" class="form-control" id="txt_alta_2" placeholder="Marcador de Posicion">
+                      </div>
+
+                  </div>
+              </div>
+
+              <div class="row"> <!--RENGLON 2-->
+                  <div class="col-md-6"> <!--COLUMNA 1 DEL RENGLON 2-->
+                      <div class="form-group">
+                          <label>Descripcion de creditos</label>
+                          <input type="text" class="form-control" id="txt_alta_3" placeholder="Marcador de Posicion">
+                      </div>
+                  </div>
+                  <div class="col-md-2"> <!--COLUMNA 2 DEL RENGLON 2-->
+                      <div class="form-group">
+                          <label>Factor</label>
+                          <input type="number" class="form-control" id="number_alta_1" min="0" value="0">
+                      </div>
+                  </div>
+              </div>
+
+              <div class="row"> <!--RENGLON 3-->
+                  <div class="col-md-12"> <!--COLUMNA 1-->
+                      <div class="form-group">
+                          <label>Ejemplos de Actividades</label>
+                          <div>
+                              <textarea class="form-control" rows="9" id="area_alta_1" placeholder="hola">
+                                  
+                              </textarea>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- /Contenido Ventana Modal-->
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-success" onclick="actionCreate();">Guardar</button>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- / Ventana Modal para Nueva Denominacion-->
+
+<!--Ventana modal de actualizacion -->
+<div class="modal fade" id="ModalActualizar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Validar constancia de <b>Juan Martínez</b></h4>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="form-group">
+                          <label>Nombre de la actividad</label>
+                          <input type="text" class="form-control" id="txt_actualizacion_1" placeholder="Curso de android">
+                      </div>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-md-4">
+                      <div class="form-group">
+                          <label>Fecha de inicio</label>
+                          <input type="date" class="form-control" id="txt_actualizacion_3" placeholder="23/05/2021">
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="form-group">
+                          <label>Fecha de termino</label>
+                          <input type="date" class="form-control" id="txt_actualizacion_3" placeholder="23/05/2021">
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="form-group">
+                          <label>Horas</label>
+                          <input type="number" class="form-control" id="number_actualizacion_1" min="0" value="16">
+                      </div>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-md-4">
+                      <div class="form-group">
+                          <label>Mostrar archivo</label>
+                          <button class="btn btn-warning btn-lg" data-toggle="modal" data-target="#mostrarArchivo">
+                            <i class="fas fa-search-plus"></i>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="col-md-4"> 
+                      
+                  </div>
+                  <div class="col-md-4"> 
+                      <label>¿Constancia válida?</label>
+                          <div>
+                              <select class="selectbox">
+                                  <optgroup label="Seleccionar">
+                                    <option value="">Seleccionar</option>
+                                      <option value="Si">Si</option>
+                                      <option value="No">No</option>
+                                  </optgroup>
+                              </select>
+                          </div>
+                      </div>
+              </div>
+
+              <div class="row"> 
+                  <div class="col-md-4"> 
+                      <div class="form-group">
+                          <label>Denominacion</label>
+                          <div>
+                              <select class="selectbox">
+                                  <optgroup label="Seleccionar">
+                                    <option value="">Seleccionar</option>
+                                      <option value='1'>1</option>
+                                      <option value='2'>2</option>
+                                      <option value='3'>3</option>
+                                      <option value='4'>4</option>
+                                  </optgroup>
+                              </select>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+
+                  </div>
+                  <div class="col-md-4"> <!--COLUMNA 2 DEL RENGLON 4-->
+                      <div class="form-group">
+                          <label>Modalidad</label>
+                          <div>
+                              <select class="selectbox">
+                                  <optgroup label="Seleccionar">
+                                    <option value="">Seleccionar</option>
+                                      <option value="p">Presencial</option>
+                                      <option value="s">Semipresencial</option>
+                                      <option value="d">Dual</option>
+                                      <option value="l">En línea</option>
+                                  </optgroup>
+                              </select>
+                          </div> </div>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-md-12"> 
+                      <div class="form-group">
+                          <label>Observaciones</label>
+                          <div>
+                              <textarea class="form-control" rows="4"id="txt_actualizacion_1" placeholder="En caso de que la constancia no sea válida, especifique el motivo"></textarea>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-success">Guardar</button>
+          </div>
+      </div>
+  </div>
+</div>
+<!--/Ventana modal de actualizacion -->
+
+<!--Ventana modal Mostrar archivo-->
+<div class="panel-body">
+     <div class="modal fade" id="mostrarArchivo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+             <div class="modal-content">
+                 <div class="modal-header">
+                  <h4 class="modal-body" id="myModalLabel">Constancia: Curso de Android          Horas: 20</h4>
+                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                 </div>
+                 <div class="modal-dialog-centered">
+                     <img src="../plantilla/img.jpg" width="550" height="500" > 
+                   </div>
+                 <div class="modal-footer">
+                     <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+                      </div>
+             </div>
+         </div>
+     </div>
+ </div>
+<!--/Ventana modal Mostrar archivo-->
+
+
+                  </div>
+              </div>
+          </div>
+              <!-- /.card-body -->
+              <div class="card-footer clearfix">
+                <ul class="pagination pagination-sm m-0 float-right">
+                  <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item"><a class="page-link" href="#">6</a></li>
+                  <li class="page-item"><a class="page-link" href="#">7</a></li>
+                  <li class="page-item"><a class="page-link" href="#">8</a></li>
+                  <li class="page-item"><a class="page-link" href="#">9</a></li>
+                  <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                </ul>
+              </div>
+                
+                <div class="col-sm-12 col-md-7">
+                  <div class="dataTables_paginate paging_simple_numbers" id="example2_paginate">
+                    <ul class="pagination float-right">
+                      <li class="paginate_button page-item previous disabled" id="example2_previous">
+                        <a href="#" aria-controls="example2" data-dt-idx="0" tabindex="0" class="page-link">Previous
+                        </a>
+                      </li>
+                     <li class="paginate_button page-item next" id="example2_next">
+                       <a href="#" aria-controls="example2" data-dt-idx="7" tabindex="0" class="page-link">Next</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            
+            </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    <!-- /.content -->
+  </div>
+
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.1.0
+    </div>
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../plantilla/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../plantilla/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- bs-custom-file-input -->
+<script src="../plantilla/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../plantilla/dist/js/adminlte.min.js"></script>
+
+<!-- AdminLTE for demo purposes -->
+<!--<script src="../plnatilla/dist/js/demo.js"></script>-->
+<!-- Page specific script -->
+
+<!--Escripts Propios-->
+
+<script src="js/ConversorUnidades.js"
+
+<script>
+  $(function () {
+    bsCustomFileInput.init();
+  });
+</script>
+
+</body>
+</html>
